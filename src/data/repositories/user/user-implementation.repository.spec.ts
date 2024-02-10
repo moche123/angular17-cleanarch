@@ -3,7 +3,7 @@ import { UserImplementationRepository } from './user-implementation.repository';
 import { HttpClient } from '@angular/common/http';
 import { IUser } from '../../../domain/models/user.model';
 
-describe('AppComponent', () => {
+describe('UserImplementationRepository', () => {
   let userImplementationRepository: UserImplementationRepository;
   const mockExampleUser = {
     login: '',

@@ -1,6 +1,6 @@
 import { UserApiMapper } from './user-api.mapper';
 
-describe('AppComponent', () => {
+describe('UserApiMapper', () => {
   let userApiMapper: UserApiMapper;
 
   beforeEach(async () => {

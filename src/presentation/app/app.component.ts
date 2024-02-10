@@ -22,7 +22,7 @@ import { UserImplementationRepository } from '../../data/repositories/user/user-
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-  user$!: Observable<IUser>;
+  user$: Observable<IUser> = new Observable<IUser>();
 
   constructor(private getUserUseCase: GetUserUseCase) {}
   ngOnInit(): void {

@@ -1,7 +1,8 @@
+import { of } from 'rxjs';
 import { UserRepository } from '../repositories/user.repository';
 import { GetUserUseCase } from './get-user.usecase';
 
-describe('AppComponent', () => {
+describe('GetUserUseCase', () => {
   let getUserUseCase: GetUserUseCase;
   const mockExampleUser = {
     login: '',
@@ -14,7 +15,7 @@ describe('AppComponent', () => {
   };
 
   const mockUserRepository = {
-    getUser: jasmine.createSpy('getUser').and.returnValue(mockExampleUser),
+    getUser: jasmine.createSpy('getUser').and.returnValue(of(mockExampleUser)),
   };
 
   beforeEach(async () => {
