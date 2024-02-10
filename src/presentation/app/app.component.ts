@@ -7,7 +7,7 @@ import { IUser } from '../../domain/models/user.model';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { UserRepository } from '../../domain/repositories/user.repository';
-import { UserImplementationRepository } from '../../data/repositories/user/user-implementation.repository';
+import { UserImplementationRepository } from '../../data/repositories/user/user-implementation.service';
 
 @Component({
   selector: 'app-root',

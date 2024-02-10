@@ -1,5 +1,5 @@
 import { of } from 'rxjs';
-import { UserImplementationRepository } from './user-implementation.repository';
+import { UserImplementationRepository } from './user-implementation.service';
 import { HttpClient } from '@angular/common/http';
 import { IUser } from '../../../domain/models/user.model';
 
